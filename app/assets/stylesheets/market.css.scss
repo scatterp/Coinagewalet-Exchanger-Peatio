@@ -618,6 +618,10 @@ header {
       &.all { tr { display: block; } }
       &.cny { tr.quote-cny { display: block; } }
       &.btc { tr.quote-btc { display: block; } }
+      &.ltc { tr.quote-ltc { display: block; } }
+      &.ppc { tr.quote-ppc { display: block; } }
+      &.blk { tr.quote-blk { display: block; } }
+      &.rpt { tr.quote-rpt { display: block; } }
     }
   }
 }

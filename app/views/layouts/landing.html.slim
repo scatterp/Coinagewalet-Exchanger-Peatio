@@ -6,12 +6,15 @@ html lang="en"
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application"
     = javascript_include_tag "locales/#{I18n.locale}"
+    = yield(:scripts) if content_for?(:scripts)
     = render 'shared/html5'
     = render 'shared/meta'
     = csrf_meta_tags
+
   body id='#{body_id}' data-lang="#{locale_name}"
+    = render 'shared/alert'
     #wrap
-      = render 'shared/alert'
+      = render 'shared/header'
       = yield
       #push
     = render 'shared/footer'

@@ -18,10 +18,18 @@ module Admin
       can :menu, Deposit
       can :manage, ::Deposits::Bank
       can :manage, ::Deposits::Satoshi
+      can :manage, ::Deposits::Blackcoin
+      can :manage, ::Deposits::Litecoin
+      can :manage, ::Deposits::Peercoin
+      can :manage, ::Deposits::Realpointcoin
 
       can :menu, Withdraw
       can :manage, ::Withdraws::Bank
       can :manage, ::Withdraws::Satoshi
+      can :manage, ::Withdraws::Blackcoin
+      can :manage, ::Withdraws::Litecoin
+      can :manage, ::Withdraws::Peercoin
+      can :manage, ::Withdraws::Realpointcoin
     end
   end
 end

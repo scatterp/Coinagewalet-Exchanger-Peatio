@@ -3,10 +3,20 @@
   currency: btc
   sort_order: 1
   min_confirm: 1
-  max_confirm: 3
-- id: 400
+  max_confirm: 8
+#- id: 400
+#  key: bank
+#  currency: cny
+#  sort_order: 2
+#  bank_accounts:
+#    -
+#      bank: 'Your Bank Name'
+#      branch: 'Your Bank Branch'
+#      holder: 'Your Account Holder'
+#      account: 'Your Account Number'
+- id: 600
   key: bank
-  currency: cny
+  currency: usd
   sort_order: 2
   bank_accounts:
     -
@@ -14,3 +24,37 @@
       branch: 'Your Bank Branch'
       holder: 'Your Account Holder'
       account: 'Your Account Number'
+- id: 650
+  key: bank
+  currency: eur
+  sort_order: 2
+  bank_accounts:
+    -
+      bank: 'Your Bank Name'
+      branch: 'Your Bank Branch'
+      holder: 'Your Account Holder'
+      account: 'Your Account Number'
+- id: 700
+  key: litecoin
+  currency: ltc
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 8
+- id: 800
+  key: blackcoin
+  currency: blk
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 8
+- id: 900
+  key: peercoin
+  currency: ppc
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 8
+- id: 1000
+  key: realpointcoin
+  currency: rpt
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 8

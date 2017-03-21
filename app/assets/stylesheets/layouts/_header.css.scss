@@ -9,7 +9,11 @@ header {
       margin-top: -1px;
   }
 
-  .navbar-brand { width: $brand-width; }
+  .navbar-brand { 
+    width: $brand-width;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
   .dropdown-menu li:hover .sub-menu {
       visibility: visible;
