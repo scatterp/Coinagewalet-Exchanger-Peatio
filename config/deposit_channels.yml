@@ -14,26 +14,29 @@
 #      branch: 'Your Bank Branch'
 #      holder: 'Your Account Holder'
 #      account: 'Your Account Number'
-- id: 600
-  key: bank
-  currency: usd
-  sort_order: 2
-  bank_accounts:
-    -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'
-- id: 650
-  key: bank
-  currency: eur
-  sort_order: 2
-  bank_accounts:
-    -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'
+
+# - id: 600
+#   key: bank
+#   currency: usd
+#   sort_order: 2
+#   bank_accounts:
+#     -
+#       bank: 'Your Bank Name'
+#       branch: 'Your Bank Branch'
+#       holder: 'Your Account Holder'
+#       account: 'Your Account Number'
+
+# - id: 650
+#   key: bank
+#   currency: eur
+#   sort_order: 2
+#   bank_accounts:
+#     -
+#       bank: 'Your Bank Name'
+#       branch: 'Your Bank Branch'
+#       holder: 'Your Account Holder'
+#       account: 'Your Account Number'
+
 - id: 700
   key: litecoin
   currency: ltc

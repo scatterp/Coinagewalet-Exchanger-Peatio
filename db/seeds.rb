@@ -1,5 +1,6 @@
-ADMIN_EMAIL = 'admin@coinagewallet.com'
-ADMIN_PASSWORD = 'Pass@word23'
+#ADMIN_EMAIL = 'admin@coinagewallet.com'
+ADMIN_EMAIL = 'admin@coinxpro.com'
+ADMIN_PASSWORD = 'Pass@word8'
 
 admin_identity = Identity.find_or_create_by(email: ADMIN_EMAIL)
 admin_identity.password = admin_identity.password_confirmation = ADMIN_PASSWORD
@@ -11,7 +12,7 @@ admin_member.authentications.build(provider: 'identity', uid: admin_identity.id)
 admin_member.save!
 
 if Rails.env == 'development'
-  NORMAL_PASSWORD = 'Pass@word8_'
+  NORMAL_PASSWORD = 'Pass@word8'
 
   foo = Identity.create(email: 'foo@peatio.dev', password: NORMAL_PASSWORD, password_confirmation: NORMAL_PASSWORD, is_active: true)
   foo_member = Member.create(email: foo.email)
