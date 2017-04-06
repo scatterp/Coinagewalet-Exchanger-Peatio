@@ -213,4 +213,23 @@ h2.panel-title {
   border-color: snow;
   border: none;
 }
+.btn {
+  border-radius: 0px;
+}
+.btn-default {
+  color: white;
+  background-color: #00cee8;
+  border-color: #00cee8;
+}
+.btn-lg, .btn-group-lg > .btn {
+  border-radius: 0px;
+}
+.btn-info {
+  color: #2f2f2f;
+  background-color: white;
+  border-color: #f2f2f2;
+}
+body {
+  font-family: "Open Sans";
+}
 @import 'layouts/custom';

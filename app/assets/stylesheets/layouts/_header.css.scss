@@ -117,14 +117,15 @@ header #languages {
 
 }
 ul.nav.navbar-nav.navbar-right li {
-  border: 1px solid #51d86f;
-  border-radius: 4px;
-  padding: 0px;
-  margin-left: 20px;
-  width: 95px;
-  text-align: center;
-  height: 37px;
-  margin-top: 9px;
+    border: 1px solid #51d86f;
+    border-radius: 4px;
+    padding: 0px;
+    margin-left: 20px;
+    /* width: 95px; */
+    text-align: center;
+    height: 37px;
+    margin-top: 9px;
+    margin: 8px;
 }
 .navbar-nav > li > a {
   padding-top: 9px;
@@ -245,5 +246,12 @@ ul.nav.navbar-nav.navbar-right li {
 }
 .index-block3-sep{
   height: 50px;
-
+}
+.seperator-line{
+  background-color: #00cee8;
+  height:1px;
+  width:100%
+}
+body{
+  min-width: 1200px;
 }
