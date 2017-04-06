@@ -38,7 +38,8 @@ html, body {
 #wrap {
   height: auto !important;
   min-height: 100%;
-  background: url(../languages/back_2.jpg) no-repeat;
+  //background: url(../languages/back_2.jpg) no-repeat;
+  background-color: white;
   background-size:cover;
   margin: 0 auto 0 - $footer-height;
 
@@ -170,7 +171,46 @@ form.simple_form {
 }
 
 #wrap3 {
-  padding-top: 30px;
+  //padding-top: 30px;
+  margin-top: -15px;
 }
-
+.navbar-default {
+  border: none;
+  border-bottom: 1px solid #00cee8;
+}
+footer{
+  background-color: #f3f3f3;
+}
+.footer-menu{
+  text-align: center;
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgb(5, 68, 80);
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+footer a {
+  color: #054450;
+}
+.footer-copyright{
+  font-family: 'Myriad Pro';
+  font-size: 10px;
+  color: #364450;
+}
+.panel.panel-default {
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+h2.panel-title {
+  text-align: center;
+}
+.panel-body {
+  background-color: #f9f9f9;
+}
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: #ededed;
+  border-color: snow;
+  border: none;
+}
 @import 'layouts/custom';
