@@ -3,7 +3,9 @@ header.text-center
   #wrap3
     .banner
       .banner-text Breaking News! RPT/BTC margin trading launched on Coinxpro.com.
-      .banner-pair BTC/USD 1029.7879
+      .banner-pair
+        - @tickers.each do |ticker|
+           .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
     .index-block1
       .index-block1-head PROFESSIONAL MONEY SERVICES
       .index-block1-dsc Our branch network of 20 prime commercial across the Kingdom provides a full range of retail foreign exchange services
