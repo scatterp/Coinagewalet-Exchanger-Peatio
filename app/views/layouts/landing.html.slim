@@ -4,6 +4,7 @@ html lang="en"
     link rel="shortcut icon" href="/favicon.ico"
     = include_gon
     = stylesheet_link_tag "application", :media => "all"
+    link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"
     = javascript_include_tag "application"
     = javascript_include_tag "locales/#{I18n.locale}"
     = yield(:scripts) if content_for?(:scripts)
