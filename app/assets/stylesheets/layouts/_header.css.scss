@@ -167,12 +167,12 @@ ul.nav.navbar-nav.navbar-right li {
 .index-block1-head {
   padding-top: 70px;
   font-size: 30px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
 }
 .index-block1-dsc {
   padding-top: 44px;
   font-size: 22px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
   width: 600px;
   margin: 0 auto;
   text-align: left;
@@ -183,7 +183,7 @@ ul.nav.navbar-nav.navbar-right li {
 }
 .index-block2-head {
   font-size: 40px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   color: rgb(0, 0, 0);
   font-weight: bold;
   padding-top: 62px;
@@ -259,4 +259,30 @@ body{
   display: inline-block;
   padding-left: 30px;
   padding-right: 30px;
+}
+.index_menu_item {
+  display: inline-block;
+  padding-left: 20px;
+  color: #00cee8;
+  font-size: 13px;
+}
+#index_menu {
+  text-transform: uppercase;
+  float: left;
+  padding-top: 20px;
+  padding-left: 170px;
+}
+header.navbar.navbar-default.navbar-static-top {
+  position: fixed !important;
+  width: 100%;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -109px;
+  visibility: hidden;
+}
+a.index_menu_item:hover {
+  color: #51d86f;
+  text-decoration: none;
 }

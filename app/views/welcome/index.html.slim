@@ -1,11 +1,13 @@
 header.text-center
   .seperator-line
   #wrap3
+    a.anchor#home
     .banner
       .banner-text Breaking News! RPT/BTC margin trading launched on Coinxpro.com.
       .banner-pair
         - @tickers.each do |ticker|
            .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
+    a.anchor#about-us
     .index-block1
       .index-block1-head PROFESSIONAL MONEY SERVICES
       .index-block1-dsc Our branch network of 20 prime commercial across the Kingdom provides a full range of retail foreign exchange services
@@ -29,7 +31,7 @@ header.text-center
         .index-block2-item
           .index-block2-img : img src="/languages/index-icons/4.png" alt="CoinxPro"
           .index-block2-header  COMPETITIVE COMMISSIONS
-          .index-block2-dsc 0% trade fee for makers, smart maker-taker model, special conditions for high-volume traders
+          .index-block2-dsc Smart maker-taker model, special conditions for high-volume traders
         .index-block2-item
           .index-block2-img : img src="/languages/index-icons/5.png" alt="CoinxPro"
           .index-block2-header CROSS-PLATFORM TRADING
@@ -44,8 +46,9 @@ header.text-center
       a href='/signup'
         .index-block3-btn = 'GET STARTED'
       .index-block3-sep
+    a.anchor#statistic
     .banner2 : img src="/languages/banners/ban3.png" alt="CoinxPro" style='width: 100%;'
-
+  a.anchor#description
   /#wrap_new
     hr class="star-light"
   /b: h4 = 'Multi Coin Transactions'
