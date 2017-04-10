@@ -52,6 +52,13 @@
   key: realpointcoin
   currency: rpt
   fixed: 8
-  fee: 0.001
+  fee: 0.007
   inuse: true
   type: WithdrawChannelRealpointcoin
+- id: 1100
+  key: tritium
+  currency: trt
+  fixed: 8
+  fee: 0.007
+  inuse: true
+  type: WithdrawChannelTritium

@@ -48,6 +48,7 @@ en:
         ltc: LTC
         blk: BLK
         rpt: RPT
+        trt: TRT
       deposit_cny:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
@@ -120,6 +121,8 @@ en:
         title: BLK Deposit
       deposit_rpt:
         title: RPT Deposit
+      deposit_trt:
+        title: TRT Deposit
 
       deposit_coin:
         address: Address
@@ -177,6 +180,8 @@ en:
         title: BLK Withdraw
       withdraw_rpt:
         title: RPT Withdraw
+      withdraw_trt:
+        title: TRT Withdraw
 
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
@@ -212,7 +217,7 @@ en:
         coin_done: Coin Done
         done: Done
         almost_done: Almost Done
-        canceled: Canceld
+        canceled: Withdraw Canceled
         failed: Failed
 
     auth:
@@ -238,4 +243,5 @@ en:
         ppc: PPC Market
         blk: BLK Market
         rpt: RPT Market
+        trt: TRT Market
 

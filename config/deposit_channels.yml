@@ -61,3 +61,9 @@
   sort_order: 1
   min_confirm: 1
   max_confirm: 8
+- id: 1100
+  key: tritium
+  currency: trt
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 8

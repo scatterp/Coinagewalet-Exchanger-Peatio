@@ -1,0 +1,11 @@
+- unless @one_tritiums.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {tritiums: @one_tritiums}
+- unless @all_tritiums.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {tritiums: @all_tritiums}
+
+- if @all_tritiums.empty? and @one_tritiums.empty?
+  h3.text-info.text-center = t('.empty')

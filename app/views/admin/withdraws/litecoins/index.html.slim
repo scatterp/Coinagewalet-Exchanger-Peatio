@@ -1,11 +1,11 @@
-- unless @one_satoshis.empty?
+- unless @one_litecoins.empty?
   .panel.panel-primary
     .panel-heading: span = t('.one')
-    = render partial: 'table', locals: {satoshis: @one_satoshis}
-- unless @all_satoshis.empty?
+    = render partial: 'table', locals: {litecoins: @one_litecoins}
+- unless @all_litecoins.empty?
   .panel.panel-success
     .panel-heading: span = t('.all')
-    = render partial: 'table', locals: {satoshis: @all_satoshis}
+    = render partial: 'table', locals: {litecoins: @all_litecoins}
 
-- if @all_satoshis.empty? and @one_satoshis.empty?
+- if @all_litecoins.empty? and @one_litecoins.empty?
   h3.text-info.text-center = t('.empty')

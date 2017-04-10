@@ -1,11 +1,11 @@
-- unless @one_satoshis.empty?
+- unless @one_blackcoins.empty?
   .panel.panel-primary
     .panel-heading: span = t('.one')
-    = render partial: 'table', locals: {satoshis: @one_satoshis}
-- unless @all_satoshis.empty?
+    = render partial: 'table', locals: {blackcoins: @one_blackcoins}
+- unless @all_blackcoins.empty?
   .panel.panel-success
     .panel-heading: span = t('.all')
-    = render partial: 'table', locals: {satoshis: @all_satoshis}
+    = render partial: 'table', locals: {blackcoins: @all_blackcoins}
 
-- if @all_satoshis.empty? and @one_satoshis.empty?
+- if @all_blackcoins.empty? and @one_blackcoins.empty?
   h3.text-info.text-center = t('.empty')

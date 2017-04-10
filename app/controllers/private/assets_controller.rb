@@ -10,6 +10,7 @@ module Private
       @ppc_proof   = Proof.current :ppc
       @blk_proof   = Proof.current :blk
       @rpt_proof   = Proof.current :rpt
+      @trt_proof   = Proof.current :trt
       # @cny_proof   = Proof.current :cny
       @cny_proof   = Proof.current :usd
 
@@ -19,6 +20,7 @@ module Private
         @ppc_account = current_user.accounts.with_currency(:ppc).first
         @blk_account = current_user.accounts.with_currency(:blk).first
         @rpt_account = current_user.accounts.with_currency(:rpt).first
+        @trt_account = current_user.accounts.with_currency(:trt).first
         # @cny_account = current_user.accounts.with_currency(:cny).first
         @cny_account = current_user.accounts.with_currency(:usd).first
       end

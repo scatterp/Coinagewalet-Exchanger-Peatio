@@ -5,6 +5,7 @@
     li:        a.ppc-proof href="#ppc-proof" data-toggle="tab" == t('.verify-ppc')
     li:        a.blk-proof href="#blk-proof" data-toggle="tab" == t('.verify-blk')
     li:        a.rpt-proof href="#rpt-proof" data-toggle="tab" == t('.verify-rpt')
+    li:        a.trt-proof href="#trt-proof" data-toggle="tab" == t('.verify-trt')
     li:        a.cny-proof href="#cny-proof" data-toggle="tab" == t('.verify-cny')
 
   .tab-content
@@ -47,6 +48,14 @@
           == t("currency.icon.rpt")
           = @rpt_proof.sum
       = render 'liability_data', account: @rpt_account, proof: @rpt_proof
+
+    #trt-proof.tab-pane.active: .trade-wrapper
+      .assets
+        span.title = t('.trt-assets-total')
+        span.currency
+          == t("currency.icon.trt")
+          = @trt_proof.sum
+      = render 'liability_data', account: @trt_account, proof: @trt_proof
 
     #cny-proof.tab-pane:        .trade-wrapper
       .assets

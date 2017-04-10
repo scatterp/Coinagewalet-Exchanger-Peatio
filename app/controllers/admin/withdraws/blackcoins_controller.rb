@@ -5,20 +5,20 @@ module Admin
 
       def index
         start_at = DateTime.now.ago(60 * 60 * 24)
-        @one_satoshis = @satoshis.with_aasm_state(:accepted).order("id DESC")
-        @all_satoshis = @satoshis.without_aasm_state(:accepted).where('created_at > ?', start_at).order("id DESC")
+        @one_blackcoins = @blackcoins.with_aasm_state(:accepted).order("id DESC")
+        @all_blackcoins = @blackcoins.without_aasm_state(:accepted).where('created_at > ?', start_at).order("id DESC")
       end
 
       def show
       end
 
       def update
-        @satoshi.process!
+        @blackcoin.process!
         redirect_to :back, notice: t('.notice')
       end
 
       def destroy
-        @satoshi.reject!
+        @blackcoin.reject!
         redirect_to :back, notice: t('.notice')
       end
     end

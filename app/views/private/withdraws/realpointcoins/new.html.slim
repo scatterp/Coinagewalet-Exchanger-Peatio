@@ -1,4 +1,4 @@
-= simple_form_for @withdraw, as: :withdraw, scope: :satoshi do |f|
+= simple_form_for @withdraw, as: :withdraw, scope: :realpointcoin do |f|
 
   = f.input :fund_source,
     label: t('.fund_source_label'),
@@ -38,6 +38,6 @@
   javascript:
     $(function() {
       $('button#withdraw_all_btn').on('click', function() {
-        $('input#withdraw_sum').val($('.withdraw_satoshi_account_balance span').text());
+        $('input#withdraw_sum').val($('.withdraw_realpointcoin_account_balance span').text());
       });
     });
