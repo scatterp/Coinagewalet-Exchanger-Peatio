@@ -1,5 +1,5 @@
 module Withdraws
-  class Tritium < ::Withdraw
+  class Tritiumcoin < ::Withdraw
     include ::AasmAbsolutely
     include ::Withdraws::Coinable
     include ::FundSourceable

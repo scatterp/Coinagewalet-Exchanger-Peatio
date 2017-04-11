@@ -1,5 +1,5 @@
 module Private::Withdraws
-  class TritiumsController < ::Private::Withdraws::BaseController
+  class TritiumcoinsController < ::Private::Withdraws::BaseController
     include ::Withdraws::Withdrawable
   end
 end

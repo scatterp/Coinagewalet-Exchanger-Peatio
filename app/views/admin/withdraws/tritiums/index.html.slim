@@ -1,11 +1,11 @@
-- unless @one_tritiums.empty?
+- unless @one_tritiumcoins.empty?
   .panel.panel-primary
     .panel-heading: span = t('.one')
-    = render partial: 'table', locals: {tritiums: @one_tritiums}
-- unless @all_tritiums.empty?
+    = render partial: 'table', locals: {tritiumcoins: @one_tritiumcoins}
+- unless @all_tritiumcoins.empty?
   .panel.panel-success
     .panel-heading: span = t('.all')
-    = render partial: 'table', locals: {tritiums: @all_tritiums}
+    = render partial: 'table', locals: {tritiumcoins: @all_tritiumcoins}
 
-- if @all_tritiums.empty? and @one_tritiums.empty?
+- if @all_tritiumcoins.empty? and @one_tritiumcoins.empty?
   h3.text-info.text-center = t('.empty')

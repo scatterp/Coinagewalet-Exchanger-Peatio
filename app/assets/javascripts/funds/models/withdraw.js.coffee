@@ -22,6 +22,6 @@ class Withdraw extends PeatioModel.Model
       when 'ppc' then 'peercoins'
       when 'blk' then 'blackcoins'
       when 'rpt' then 'realpointcoins'
-      when 'trt' then 'tritiums'
+      when 'trt' then 'tritiumcoins'
 
 window.Withdraw = Withdraw

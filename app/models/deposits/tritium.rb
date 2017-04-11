@@ -1,5 +1,5 @@
 module Deposits
-  class Tritium < ::Deposit
+  class Tritiumcoin < ::Deposit
     include ::AasmAbsolutely
     include ::Deposits::Coinable
 

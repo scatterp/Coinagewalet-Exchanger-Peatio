@@ -25,7 +25,7 @@ en:
       withdraws/litecoin: Withdraw Litecoin
       withdraws/blackcoin: Withdraw Blackcoin
       withdraws/peercoin: Withdraw Peercoin
-      withdraws/tritium: Withdraw Tritium
+      withdraws/tritiumcoin: Withdraw Tritium
     attributes:
       api_token:
         access_key: Access Key
@@ -203,7 +203,7 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
-      deposits/tritium:
+      deposits/tritiumcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -279,7 +279,7 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
-      withdraws/tritium:
+      withdraws/tritiumcoin:
         id: ID
         member_name: Account
         currency_obj_key_text: Currency
@@ -378,7 +378,7 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
-        withdraws/tritium:
+        withdraws/tritiumcoin:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -493,7 +493,7 @@ en:
       code: RPT
       name: RealPointCoin
       format: '0,0.0000'
-    tritium:
+    tritiumcoin:
       key: TRT
       code: TRT
       name: Tritium
@@ -671,8 +671,8 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
-    tritium:
-      key: Tritium Chain
+    tritiumcoin:
+      key: Tritiumcoin Chain
       title: Tritium Deposits
       intro: Deposit tritium from your own wallet address to CoinxPro account
       latency: 1 confirmation
@@ -704,7 +704,7 @@ en:
       peercoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
-      tritiums:
+      tritiumcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       banks:
@@ -814,8 +814,7 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon
-            as possible
+          notice: Withdraw request is submit successful, we will process it as soon as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -843,8 +842,7 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon
-            as possible
+          notice: Withdraw request is submit successful, we will process it as soon as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -858,8 +856,7 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon
-            as possible
+          notice: Withdraw request is submit successful, we will process it as soon as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -873,8 +870,7 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon
-            as possible
+          notice: Withdraw request is submit successful, we will process it as soon as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -884,12 +880,11 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
-      tritiums:
+      tritiumcoins:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon
-            as possible
+          notice: Withdraw request is submit successful, we will process it as soon as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -1462,7 +1457,7 @@ en:
         blackcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
-        tritium:
+        tritiumcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
     hints:
@@ -1503,7 +1498,7 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         blackcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
-        tritium:
+        tritiumcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -1582,10 +1577,10 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
-        tritium:
+        tritiumcoin:
           fee: Fee
           sum: Amount
-          fund_uid: Tritium Address
+          fund_uid: Tritiumcoin Address
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
@@ -1634,7 +1629,7 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-      tritiums:
+      tritiumcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -1783,7 +1778,7 @@ en:
           withdraw: Withdrawals
         update:
           notice: Withdraw was made
-      tritiums:
+      tritiumcoins:
         index:
           one: Pending withdrawals
           all: Last 24 hours
@@ -1827,7 +1822,7 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
-  deposits/tritium:
+  deposits/tritiumcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1930,7 +1925,7 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
-    tritium:
+    tritiumcoin:
       amount: Amount
       txid: TxId
       created_at: Created At
@@ -2007,7 +2002,7 @@ en:
         litecoin: Litecoin
         blackcoin: Blackcoin
         peercoin: PeerCoin
-        tritium: Tritium
+        tritiumcoin: Tritiumcoin
         bank: Bank
     id_document:
       id_document_type:
@@ -2504,8 +2499,8 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
-    tritium:
-      key: Tritium_Chain
+    tritiumcoin:
+      key: Tritiumcoin_Chain
       title: Tritium Blockchain
       intro: Withdraw Tritium to your own Tritium wallet
       latency: 30 minutes
@@ -2585,7 +2580,7 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
-  withdraws/tritium:
+  withdraws/tritiumcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

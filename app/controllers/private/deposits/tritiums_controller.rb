@@ -1,6 +1,6 @@
 module Private
   module Deposits
-    class TritiumsController < ::Private::Deposits::BaseController
+    class TritiumcoinsController < ::Private::Deposits::BaseController
       include ::Deposits::CtrlCoinable
     end
   end
