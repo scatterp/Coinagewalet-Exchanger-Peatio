@@ -496,7 +496,7 @@ en:
     tritiumcoin:
       key: TRT
       code: TRT
-      name: Tritium
+      name: Tritiumcoin
       format: '0,0.0000'
   datagrid:
     empty: no data found
@@ -814,7 +814,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -828,7 +829,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -842,7 +844,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -856,7 +859,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -870,7 +874,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
@@ -884,7 +889,8 @@ en:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
           alert_two_factor: Two-Factor Authentication error
         new:
           submit: Submit
