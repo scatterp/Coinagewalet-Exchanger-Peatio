@@ -117,7 +117,7 @@ header #languages {
 
 }
 ul.nav.navbar-nav.navbar-right li {
-    border: 1px solid #51d86f;
+    border: 1px solid #00cee8;
     border-radius: 4px;
     padding: 0px;
     margin-left: 20px;
@@ -269,8 +269,9 @@ body{
 #index_menu {
   text-transform: uppercase;
   float: left;
-  padding-top: 20px;
-  padding-left: 170px;
+  padding-left: 260px;
+  position: relative;
+  top: 14px;
 }
 header.navbar.navbar-default.navbar-static-top {
   position: fixed !important;
@@ -284,5 +285,27 @@ a.anchor {
 }
 a.index_menu_item:hover {
   color: #51d86f;
+  text-decoration: none;
+}
+.navbar-nav > li > a > span, .navbar-nav > li > a > i {
+  text-transform: uppercase;
+  color: #00cee8;
+  font-size: 13px;
+}
+.navbar-nav > li > a:hover > span {
+  text-transform: uppercase;
+  color: #00cee8;
+  font-size: 13px;
+}
+ul.dropdown-menu {
+  background-color: black;
+}
+.dropdown-menu a span, .dropdown-menu i {
+  color: #00cfea;
+}
+.index-block3-title a {
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }

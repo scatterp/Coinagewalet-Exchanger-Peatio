@@ -92,7 +92,7 @@ module ApplicationHelper
     class_name ||= merged.empty? ? nil : 'active'
 
     content_tag(:li, :class => class_name) do
-      link_to link_path, target: target do
+      link_to link_path, class: "index_menu_item", target: target do
         content_tag(:i, :class => "fa fa-#{link_icon}") do
           content_tag(:span, counter,class: "counter") if counter != 0
         end +
