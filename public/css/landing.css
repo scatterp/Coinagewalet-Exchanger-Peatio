@@ -324,9 +324,15 @@ a.navbar-brand {
 @media (max-width: 768px) {
     .banner-pair {
         position: absolute;
-        height: 40px;
+        height: auto;
         padding-top: 10px;
         font-size: 16px;
         margin-top: -40px;
+        padding-bottom: 10px;
+    }
+    .ticker-pair {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
