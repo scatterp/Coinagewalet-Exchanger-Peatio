@@ -2,11 +2,17 @@ header.text-center
   .seperator-line
   #wrap3
     a.anchor#home
-    .banner
+    .banner.hidden-xs
       .banner-text Breaking News! RPT/BTC margin trading launched on Coinxpro.com.
       .banner-pair
         - @tickers.each do |ticker|
            .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
+    .banner-mob.visible-xs
+      img.img-responsive src='/languages/big-logo.jpg'
+      .banner-pair
+        - @tickers.each do |ticker|
+          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
+
     a.anchor#about-us
     .index-block1
       .index-block1-head PROFESSIONAL MONEY SERVICES
@@ -15,31 +21,39 @@ header.text-center
       .index-block2-head
         = 'WHY CHOOSE '
         span class='white' = 'CoinxPro?'
-      .index-block2-container
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/1.png" alt="CoinxPro"
-          .index-block2-header LEGAL COMPLIANCE
-          .index-block2-dsc Registration in UK, MSB status in FinCEN, essential licenses and strong relations with banks
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/2.png" alt="CoinxPro"
-          .index-block2-header PROFESSIONAL MONEY SERVICES
-          .index-block2-dsc Our branch network of 20 prime commercial across the Kingdom provides a full range of retail foreign exchange services
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/3.png" alt="CoinxPro"
-          .index-block2-header WORLD COVERAGE
-          .index-block2-dsc Providing services in 99% countries around the globe, including 24 states of USA
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/4.png" alt="CoinxPro"
-          .index-block2-header  COMPETITIVE COMMISSIONS
-          .index-block2-dsc Smart maker-taker model, special conditions for high-volume traders
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/5.png" alt="CoinxPro"
-          .index-block2-header CROSS-PLATFORM TRADING
-          .index-block2-dsc Trading via website, mobile app, WebSocket and REST API. FIX API for institutional traders
-        .index-block2-item
-          .index-block2-img : img src="/languages/index-icons/6.png" alt="CoinxPro"
-          .index-block2-header PAYMENT OPTIONS
-          .index-block2-dsc Most popular methods: Visa, MasterCard, bank transfer (SWIFT, SEPA), cryptocurrency
+      .container
+        .row
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/1.png" alt="CoinxPro"
+            .index-block2-header LEGAL COMPLIANCE
+            .index-block2-dsc Registration in UK, MSB status in FinCEN, essential licenses and strong relations with banks
+            div.clearfix
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/2.png" alt="CoinxPro"
+            .index-block2-header PROFESSIONAL MONEY SERVICES
+            .index-block2-dsc Our branch network of 20 prime commercial across the Kingdom provides a full range of retail foreign exchange services
+            div.clearfix
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/3.png" alt="CoinxPro"
+            .index-block2-header WORLD COVERAGE
+            .index-block2-dsc Providing services in 99% countries around the globe, including 24 states of USA
+            div.clearfix
+          div.clearfix
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/4.png" alt="CoinxPro"
+            .index-block2-header  COMPETITIVE COMMISSIONS
+            .index-block2-dsc Smart maker-taker model, special conditions for high-volume traders
+            div.clearfix
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/5.png" alt="CoinxPro"
+            .index-block2-header CROSS-PLATFORM TRADING
+            .index-block2-dsc Trading via website, mobile app, WebSocket and REST API. FIX API for institutional traders
+            div.clearfix
+          .col-md-4
+            .index-block2-img : img src="/languages/index-icons/6.png" alt="CoinxPro"
+            .index-block2-header PAYMENT OPTIONS
+            .index-block2-dsc Most popular methods: Visa, MasterCard, bank transfer (SWIFT, SEPA), cryptocurrency
+            div.clearfix
     .banner2 : img src="/languages/banners/ban2.jpg" alt="CoinxPro" style='width: 100%;'
     .index-block3
       .index-block3-title = 'Open account for free and start trading Bitcoins now!'
@@ -47,7 +61,24 @@ header.text-center
         .index-block3-btn = 'GET STARTED'
       .index-block3-sep
     a.anchor#statistic
-    .banner2 : img src="/languages/banners/ban3.png" alt="CoinxPro" style='width: 100%;'
+    .banner2
+      img.img-responsive.hidden-xs.hidden-sm src="/languages/banners/ban3.jpg" alt="CoinxPro"
+      .container.banner4-grid.text-left
+        .row
+          .ban4-tblock.col-md-3.col-md-offset-1.ban4-l
+            .banner2-title COMPETITIVE COMMISSIONS
+            .banner2-dsc  0% trade fee for makers, smart maker-taker model, special conditions for high-volume traders
+          .col-md-4.hidden-xs.hidden-sm
+            img.img-responsive src='/languages/banners/logo.png'
+          .ban4-tblock.col-md-3.ban4-r
+            .banner2-title EASY MOBILE CASH
+            .banner2-dsc No matter where you travel, taking local currency is a hassle-free way to pay for incidentals and unexpected expenses. Now you can pay easy with our our portable solutions
+        .row.hidden-xs.hidden-sm style='height:20px;'
+        .row
+          .ban4-tblock.col-md-3.col-md-offset-5
+            .banner2-title GLOBAL ACCESS
+            .banner2-dsc Since your enhanced TD Access Card is accepted internationally wherever merchants take Visa, it’s accepted in over 200 countries and at millions of places worldwide
+
   a.anchor#description
   /#wrap_new
     hr class="star-light"

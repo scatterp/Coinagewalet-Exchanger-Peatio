@@ -2,8 +2,11 @@ doctype html
 html lang="en"
   head
     link rel="shortcut icon" href="/favicon.ico"
+    meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'
     = include_gon
-    = stylesheet_link_tag "application", :media => "all"
+    /= stylesheet_link_tag "application", :media => "all"
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
+    link rel="stylesheet" href="/assets/css/landing.css"
     link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"
     = javascript_include_tag "application"
     = javascript_include_tag "locales/#{I18n.locale}"
@@ -16,7 +19,6 @@ html lang="en"
     = render 'shared/alert'
     #wrap
       = render 'shared/header'
-      .header-sep style='height:109px'
       = yield
       #push
     = render 'shared/footer'
