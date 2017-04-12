@@ -311,6 +311,16 @@ a.navbar-brand {
     margin-top: 10px;
     position: relative;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #2f2f2f;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}
 @media (max-width: 990px) {
     .banner4-grid {
         position: relative;
