@@ -90,7 +90,7 @@ module ApplicationHelper
     merged = (controllers & controller_path.split('/'))
     class_name = current_page?(link_path) ? 'active' : nil
     class_name ||= merged.empty? ? nil : 'active'
-
+    class_name = nil
     content_tag(:li, :class => class_name) do
       link_to link_path, class: "index_menu_item", target: target do
         content_tag(:i, :class => "fa fa-#{link_icon}") do
