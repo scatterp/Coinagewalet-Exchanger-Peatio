@@ -321,6 +321,19 @@ a.navbar-brand {
     border-top-right-radius: 0;
     width: 100%;
 }
+.navbar-default {
+
+}
+.navbar-brand {
+    float: left;
+    height: auto !important;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar {
+    height: auto !important;
+}
 @media (max-width: 990px) {
     .banner4-grid {
         position: relative;
@@ -344,5 +357,12 @@ a.navbar-brand {
         display: inline-block;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    #index_menu {
+        float: none;
+
+    }
+    ul#index_menu {
+        text-align: center;
     }
 }
