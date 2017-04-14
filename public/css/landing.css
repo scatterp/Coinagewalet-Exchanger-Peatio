@@ -65,13 +65,12 @@ body {
 header #languages {
     width: 64px;
     min-width: 64px;
-li > a{ padding-top: 8px; }
 }
+header #languages li > a{ padding-top: 8px; }
 .navbar {
-    min-height: 110px;
-    padding: 27px;
+    min-height: 98px;
+    padding: 17px;
     margin-bottom: 0px;
-
 }
 ul.nav.navbar-nav.navbar-right li {
     border: 1px solid #00cee8;
@@ -95,11 +94,10 @@ ul.nav.navbar-nav.navbar-right li {
 .banner-text {
     color: white;
     top: 408px;
-    left: 25%;
     font-size: 30px;
-    max-width: 684px;
-    text-align: left;
+    text-align: center;
     position: absolute;
+    width: 100%;
 }
 .banner-pair {
     position: absolute;
@@ -333,6 +331,9 @@ a.navbar-brand {
 }
 .navbar {
     height: auto !important;
+}
+.index-block2-sep.hidden-xs {
+    height: 40px;
 }
 @media (max-width: 990px) {
     .banner4-grid {
