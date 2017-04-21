@@ -1428,7 +1428,7 @@ en:
         email: E-mail Address
         password: Password
       identity:
-        email: Example：xiaobai@example.com
+        email: Example：name@example.com
         password: Please set your login password
         password_confirmation: Confirm your password
         edit:
@@ -1443,7 +1443,7 @@ en:
         origin_volume: Sell Volume
         sum: Total Turnover
       reset_password:
-        email: For example：xiaobai@example.com
+        email: For example：name@example.com
         password: Please set your login password!
       withdraw:
         bank:
@@ -2598,3 +2598,35 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
+  mainpage:
+    message1: YOUR PROFESSIONAL CRYPTO CURRENCY EXCHANGER
+    message2: The Next Generation Multi Crypto Currency 24/7 Live Exchange
+    message3: Trade multiple digital currencies easy, safe, and smart, CoinXpro brings you a whole new technical view on 
+      trading through candle sticks plus line charting now analysis and predicate your future trades based on past and 
+      present trades using the simple yet advanced charting tools MA, EMA and MACD.
+    message3с: Get Started
+    message4a: Crypto to Crypto exchange
+    message4b: We provide individuals and Merchants a world class experience to buy and sell Multi crypto currencies
+    message5a: A Delightful Process
+    message5b: Add funds at jet speed with Free and No fee deposits to your account and also instant withdraw options
+    message6a: As Easy As Possible
+    message6b: Choose the alt-coins against bitcoin you would like to exchange, Just select buy or sell orders thats it!
+    message7a: Best Trading Platform
+    message7b: Traders who demand lightning fast trade execution, stable wallets, and industry-best security practices.
+    message8a: 24/7 Customer Care
+    message8b: Whether you are new to trading and crypto currencies, or a Expert, we provide friendly support to all Members!
+    message9a: The Next Generation Multi Crypto Currency 24/7 Live Exchange
+    message9b: The Next Generation Multi Crypto Currency 24/7 Live Exchange
+    message10a: Safe and Sound 
+    message10b: You get safe, live and secured wallets with Two-way authentication to keep thiefs away from your account.
+    message11a: Competitive and low fee
+    message11b: Lowest fee with Smart maker&taker model, special options for high-volume traders with best trading access
+
+    message12: Open account for free and start trading now!
+    message13: exclusive benefits
+    message14: Experience Matters
+    message15: Our systems are constantly upgraded and tested to ensure that we are exceeding industry-best standards.
+    message16: Top High Security
+    message17: To protect users, we integrated two-factor authentication for all withdrawals using Google authenticator
+    message18: Trade Confidentially
+    message19: No KYC verification required, so you can rest easy about the safety of your trades and personal information.
