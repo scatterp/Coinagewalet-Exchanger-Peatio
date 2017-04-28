@@ -3,10 +3,18 @@ header.text-center
   #wrap3
     a.anchor#home
     .banner.hidden-xs
-      .banner-text = t("mainpage.message2")
-      .banner-pair
+      /.banner-text = t("mainpage.message2")
+      /.banner-pair
         - @tickers.each do |ticker|
-           .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
+          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
+      .intro
+        .fullscreen-bg
+          /video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay' poster='/languages/intro-bg.jpg'
+          video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay'
+            source src='/languages/video.mp4' type='video/mp4'
+        .intro__wrapper
+          img src='/languages/intro-logo.png'
+          p = t("mainpage.message2")
     .banner-mob.visible-xs
       img.img-responsive src='/languages/big-logo.jpg'
       .banner-pair
@@ -16,7 +24,7 @@ header.text-center
     a.anchor#about-us
     .index-block1
       .index-block1-head = t("mainpage.message1")
-      .index-block1-dsc = t("mainpage.message3")
+      .index-block1-dsc.myntexalstyle = t("mainpage.message3")
     .index-block2
       .index-block2-head
         span class='white' = 'CoinxPro '
