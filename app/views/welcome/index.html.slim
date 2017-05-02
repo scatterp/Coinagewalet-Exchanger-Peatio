@@ -18,7 +18,7 @@ header.text-center
       .banner-pair
         - @tickers.each do |ticker|
           .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
-    .banner-mob.visible-xs
+    .banner-mob.visible-xs.hidden-xs
       img.img-responsive src='/languages/big-logo.jpg'
       .banner-pair
         - @tickers.each do |ticker|
