@@ -473,5 +473,7 @@ a.navbar-brand {
     .index-block1-head {
         padding-top: 180px;
     }
-
+    .index-block1-dsc{
+        margin: 5px;
+    }
 }
