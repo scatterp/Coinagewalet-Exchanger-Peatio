@@ -449,4 +449,24 @@ a.navbar-brand {
             position: absolute;
             z-index: 10000000;
         }
+
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+        background-color: #2f2f2f;
+    }
+    .navbar-brand{
+        display:block;
+    }
+    .navbar-default {
+        background-color: #2f2f2f;
+    }
+    .navbar-default {
+        border-bottom: 1px solid #00cee8;
+    }
+    header.navbar.navbar-default.navbar-static-top {
+        /* margin-bottom: 33px; */
+        margin-bottom: 20px;
+    }
+    div#wrap3 {
+        margin-top: 100px;
+    }
 }
