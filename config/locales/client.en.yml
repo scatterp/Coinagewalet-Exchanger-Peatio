@@ -192,6 +192,7 @@ en:
         min: At least
         withdraw_all: Withdraw all
         fee_explain: About Fee
+        fee_explain_message: Withdraw fee is 0.2% from total amount 
 
       withdraw_history:
         title: Withdraw History

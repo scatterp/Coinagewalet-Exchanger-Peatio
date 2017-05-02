@@ -192,6 +192,7 @@ ru:
         min: Не менее
         withdraw_all: Вывести все
         fee_explain: О комиссии
+        fee_explain_message: Комисия составляет 2% от сумы
 
       withdraw_history:
         title: Withdraw History

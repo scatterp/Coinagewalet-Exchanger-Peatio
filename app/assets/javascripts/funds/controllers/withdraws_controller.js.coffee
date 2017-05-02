@@ -1,4 +1,4 @@
-app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon', 'fundSourceService', 'ngDialog', ($scope, $stateParams, $http, $gon, fundSourceService, ngDialog) ->
+app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon', 'fundSourceService', '$filter', 'ngDialog', ($scope, $stateParams, $http, $gon, fundSourceService, $filter, ngDialog) ->
 
   _selectedFundSourceId = null
   _selectedFundSourceIdInList = (list) ->
@@ -81,6 +81,12 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
       controller: 'FundSourcesController'
       className: className
       data: {currency: $scope.currency}
+
+  $scope.aboutfee = ->
+    ngDialog.openConfirm
+      template: '/templates/shared/aboutfee_dialog.html'
+      #data: {content: $filter('t')('funds.withdraw_coin.fee_explain_message')}
+      data: {content: 'Withdraw fee is 0.2% from total amount '}
 
   $scope.sms_and_app_activated = ->
     current_user.app_activated and current_user.sms_activated

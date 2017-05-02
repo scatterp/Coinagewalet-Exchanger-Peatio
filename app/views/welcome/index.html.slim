@@ -11,10 +11,13 @@ header.text-center
         .fullscreen-bg
           /video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay' poster='/languages/intro-bg.jpg'
           video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay'
-            source src='/languages/video.mp4' type='video/mp4'
+            source src='/languages/coinxprov2.mp4' type='video/mp4'
         .intro__wrapper
           img src='/languages/intro-logo.png'
           p = t("mainpage.message2")
+      .banner-pair
+        - @tickers.each do |ticker|
+          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
     .banner-mob.visible-xs
       img.img-responsive src='/languages/big-logo.jpg'
       .banner-pair

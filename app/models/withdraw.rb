@@ -222,7 +222,8 @@ class Withdraw < ActiveRecord::Base
     self.sum ||= 0.0
     #self.fee ||= 0.0
     #self.fee = 0.5
-    self.fee = self.sum / 100.0
+    self.fee = self.sum / 500.0
+    #self.fee = self.sum / 100.0
     self.amount = sum - fee
   end
 
