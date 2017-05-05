@@ -66,6 +66,12 @@ app.controller 'WithdrawsController', ['$scope', '$stateParams', '$http', '$gon'
         $.publish 'withdraw:form:submitted'
 
   @withdrawAll = ->
+
+    fee = parseFloat($('#withdraw_balance').html())*0.002
+    if isNaN(fee)
+      fee = 0
+    $('#withdraw_fee').html fee
+
     @withdraw.sum = Number($scope.account.balance)
 
   $scope.openFundSourceManagerPanel = ->

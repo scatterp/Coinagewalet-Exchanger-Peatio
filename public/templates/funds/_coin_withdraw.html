@@ -42,6 +42,30 @@
 
   </div>
 
+  <div class="form-group">
+    <div class="col-sm-6">
+      <label class="optional control-label">Fee</label>
+    </div>
+    <div class="col-sm-12">
+      <p class="form-control-static"><span class="currency-fee" id="withdraw_fee"  ng-bind-html='withdrawsCtrl.withdraw.withdraw_fee'>0</span></p>
+    </div>
+  </div>
+  <script>
+    function updateFeeWithdraw(){
+      var fee = parseFloat($('#withdraw_sum').val())*0.002
+      if (isNaN(fee)){
+        fee = 0
+      }
+      $('#withdraw_fee').html(fee)
+    }
+    $('#withdraw_all_btn').click(function () {
+      updateFeeWithdraw()
+    })
+    $('#withdraw_sum').keyup(function() {
+      updateFeeWithdraw()
+    });
+
+  </script>
   <ng-include src="'/templates/funds/_two_factor_auth.html'"></ng-include>
 
   <div class="form-group">

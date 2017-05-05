@@ -54,6 +54,15 @@
       @changeOrder @value
     else
       @setInputValue @value
+    fee = parseFloat($('#order_bid_total').val())*0.002
+    if isNaN(fee)
+      fee = 0
+    $('#order_bid_fee').val(fee)
+
+    fee = parseFloat($('#order_ask_total').val())*0.002
+    if isNaN(fee)
+      fee = 0
+    $('#order_ask_fee').val(fee)
 
   @validateRange = (v) ->
     if @max && v.greaterThan(@max)

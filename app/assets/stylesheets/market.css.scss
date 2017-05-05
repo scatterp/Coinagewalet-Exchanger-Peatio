@@ -843,5 +843,14 @@ table {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+.new_order_bid, .new_order_ask {
+  zoom: 85%;
+}
+input#fee[disabled] {
+  background-color: black;
+}
+input#order_bid_fee, input#order_ask_fee {
+  background: black;
+}
 
 @import 'custom/market';
