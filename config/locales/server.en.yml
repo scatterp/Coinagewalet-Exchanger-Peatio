@@ -1184,12 +1184,14 @@ en:
         last_price: Last Price
         amount: Amount
         total: Total
+        fee: Fee
       ask_entry:
         action: "Sell %{currency}"
         price: Price
         last_price: Last Price
         amount: Amount
         total: Total
+        fee: Fee
       place_order:
         price_high: HIGH
         price_low: LOW
