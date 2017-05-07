@@ -2359,6 +2359,7 @@ en:
       session_expired: Session expired. Try again.
     create:
       error: You account has been disabled, contact admin if you have any problem.
+      put_capture: Please try to enter captcha again
     failure:
       account_locked: Too many failed login attempts. To ensure the safety of your
         account, we have locked your account. To unlock, reset your password by clicking
