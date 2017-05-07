@@ -101,3 +101,7 @@ table#setting_list.table
         = member_tag(key)
   p.text-warning
     == t('.safety_instruction')
+  div id="coindesk-widget" data-size="mpu" data-align="left" style='padding-left: 5px'
+    javascript:
+      document.write("<" + "script src='//widget.coindesk.com/bpiticker/coindesk-widget.min.js'>" + "<" + "/script>");
+    /p = 'test message here version 2'
