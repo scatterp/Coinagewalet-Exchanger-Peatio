@@ -92,7 +92,7 @@ group :test do
   gem 'mocha', :require => false
   gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'launchy'
+  gem 'launchy', '>= 2.4.2'
   gem 'selenium-webdriver'
   gem 'poltergeist'
 
