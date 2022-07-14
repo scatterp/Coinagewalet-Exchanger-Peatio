@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
-gem 'rails-i18n'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
+gem 'rails-i18n', '>= 4.0.2'
 
 gem 'mysql2'
 gem 'daemons-rails'
@@ -17,7 +17,7 @@ gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-identity', '~> 1.1.1'
 gem 'omniauth-weibo-oauth2', '~> 0.4.0'
 
-gem 'figaro'
+gem 'figaro', '>= 1.0.0'
 gem 'hashie'
 
 gem 'aasm', '~> 3.4.0'
@@ -26,7 +26,7 @@ gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize'
 gem 'datagrid'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 3.1.0'
 gem 'kaminari'
 gem 'paranoid2'
 gem 'active_hash'
@@ -67,7 +67,7 @@ gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 group :development, :test do
