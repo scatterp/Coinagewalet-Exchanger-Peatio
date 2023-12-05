@@ -5,7 +5,7 @@ gem 'rails-i18n'
 
 gem 'mysql2'
 gem 'daemons-rails'
-gem 'redis-rails'
+gem 'redis-rails', '>= 5.0.2'
 
 gem 'rotp'
 gem 'json'
